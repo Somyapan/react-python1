@@ -70,7 +70,7 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: 600, margin: "30px auto", fontFamily: "sans-serif", padding: "20px" }}>
-      <h1>📚 Student Registration</h1>
+      <h1>📚 Student Registrations</h1>
 
       {error && <div style={{ color: "red", marginBottom: "10px", padding: "10px", backgroundColor: "#ffebee", borderRadius: "4px" }}>{error}</div>}
       {msg && <div style={{ color: "green", marginBottom: "10px", padding: "10px", backgroundColor: "#e8f5e9", borderRadius: "4px" }}>{msg}</div>}
