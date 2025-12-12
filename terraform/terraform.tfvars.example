@@ -1,0 +1,19 @@
+# AWS Configuration
+aws_region = "us-east-1"
+
+# Domain Configuration
+domain_name = "yourdomain.com"
+
+# ACM Certificate ARN (request in AWS Certificate Manager first)
+acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
+
+# RDS MySQL Configuration
+rds_host     = "mydb-instance.abcdefghijk.us-east-1.rds.amazonaws.com"
+rds_port     = "3306"
+rds_user     = "admin"
+rds_password = "your-secure-password-here"
+rds_database = "studentdb"
+
+# Route 53 Configuration (optional)
+create_route53_record = true
+route53_zone_name     = "yourdomain.com"

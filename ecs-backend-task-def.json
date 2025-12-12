@@ -1,0 +1,24 @@
+{
+  "family": "student-form-app-backend-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "containerDefinitions": [
+    {
+      "name": "backend",
+      "image": "<BACKEND_IMAGE_URI>",
+      "essential": true,
+      "portMappings": [
+        { "containerPort": 8000, "hostPort": 8000 }
+      ],
+      "environment": [
+        { "name": "MYSQL_HOST", "value": "mydb-instance.abcdefghijk.us-east-1.rds.amazonaws.com" },
+        { "name": "MYSQL_PORT", "value": "3306" },
+        { "name": "MYSQL_USER", "value": "admin" },
+        { "name": "MYSQL_PASSWORD", "value": "yourpassword" },
+        { "name": "MYSQL_DATABASE", "value": "studentdb" }
+      ]
+    }
+  ]
+}
